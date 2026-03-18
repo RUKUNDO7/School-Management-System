@@ -1,4 +1,4 @@
-﻿package com.smartschoolhub.repository;
+package com.smartschoolhub.repository;
 
 import com.smartschoolhub.domain.UserAccount;
 import org.springframework.data.jpa.repository.JpaRepository;
