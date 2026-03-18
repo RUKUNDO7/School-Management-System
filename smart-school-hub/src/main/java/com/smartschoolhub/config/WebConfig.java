@@ -1,4 +1,4 @@
-﻿package com.smartschoolhub.config;
+package com.smartschoolhub.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

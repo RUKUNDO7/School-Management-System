@@ -1,4 +1,4 @@
-﻿package com.smartschoolhub.config;
+package com.smartschoolhub.config;
 
 import com.smartschoolhub.service.JwtService;
 import com.smartschoolhub.service.UserAccountService;
