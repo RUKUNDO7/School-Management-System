@@ -1,56 +1,74 @@
-﻿# Smart School Hub
+﻿Smart School Hub (Backend)
 
-Spring Boot + JPA + Postgres scaffold for a School Management System with JWT auth and a React UI.
+Smart School Hub is a secure and scalable backend system for managing school operations. It is built with Spring Boot and follows clean architecture principles, modular design, and RESTful API best practices.
 
-## Tech Stack
-- Java 17
-- Spring Boot 3.2.5
-- Spring Web + Spring Data JPA + Spring Security
-- PostgreSQL
-- React (Vite)
+This project showcases my ability to design and implement a real-world backend system with proper authentication, structured APIs, and maintainable code.
 
-## Backend Run
-Set environment variables or use defaults:
-- `DB_URL` (default `jdbc:postgresql://localhost:5432/smartschoolhub`)
-- `DB_USER` (default `postgres`)
-- `DB_PASSWORD` (default `postgres`)
-- `JWT_SECRET` (default `change-this-secret-in-prod`)
+🚀 Tech Stack
+Java 17
+Spring Boot 3.2.5
+Spring Security (JWT Authentication)
+Spring Data JPA (Hibernate)
+PostgreSQL
 
-```
-mvn spring-boot:run
-```
+🧠 Key Features
+🔐 JWT-based Authentication & Authorization
+🧩 Modular Structure (Auth, Students, Teachers, etc.)
+🗃️ Relational Database Design with JPA
+📊 Full School Domain Modeling
+⚡ Clean RESTful APIs
+🔄 Scalable and Maintainable Code
 
-### Default Admin
-- Username: `admin`
-- Password: `admin123`
 
-## Frontend Run
-```
-cd frontend
-npm install
-npm run dev
-```
+🔐 Authentication
+Uses JWT for secure API access
+All /api/** routes are protected except authentication
+Public Endpoints
+POST /api/auth/login
+POST /api/auth/register
 
-## Core Modules & Endpoints
-Base path: `/api`
 
-- Auth: `/auth/login`, `/auth/register`
-- Students: `/students`
-- Teachers: `/teachers`
-- Classes: `/classes`
-- Subjects: `/subjects`
-- Student Attendance: `/attendance`
-- Teacher Attendance: `/teacher-attendance`
-- Exams: `/exams`
-- Grades: `/grades`
-- Fees: `/fees`
-- Teacher Evaluations: `/teacher-evaluations`
-- Timetable: `/timetable`
-- Dashboard summary: `/dashboard/summary`
-- Reports: `/reports/*`
-- Parent portal (student progress): `/parent-portal/students/{studentId}/progress`
+📌 API Modules
+Base path: /api
 
-## Notes
-- `classes` table is mapped by the `SchoolClass` entity.
-- Schema is generated automatically by JPA (`spring.jpa.hibernate.ddl-auto=update`).
-- JWT is required for all `/api/**` routes except `/api/auth/**`.
+Core Management
+/students
+/teachers
+/classes
+/subjects
+
+Attendance
+/attendance
+/teacher-attendance
+
+Academics
+/exams
+/grades
+/timetable
+
+Finance & Evaluation
+/fees
+/teacher-evaluations
+
+Insights
+/dashboard/summary
+/reports/*
+
+Parent Portal
+/parent-portal/students/{studentId}/progress
+
+🏗️ System Design
+Entity relationships managed using JPA
+Automatic schema updates:
+spring.jpa.hibernate.ddl-auto=update
+Designed for easy extension (roles, permissions, new modules)
+
+💡 What This Project Shows
+Ability to build a production-ready backend system
+Strong understanding of security and authentication
+Experience with database design and API architecture
+Writing clean, scalable, and maintainable code
+
+🎯 Goal
+
+This project reflects my readiness to contribute to a backend team by building secure, efficient, and scalable systems that solve real-world problems.
