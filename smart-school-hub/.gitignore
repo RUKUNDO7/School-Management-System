@@ -1,4 +1,4 @@
-# Compiled class file
+﻿# Compiled class file
 *.class
 
 # Log files
@@ -27,7 +27,9 @@ target/
 build/
 .gradle/
 .m2/
-src/test/resources/
+
+# Tests
+src/test/
 
 # IDE files
 .idea/
